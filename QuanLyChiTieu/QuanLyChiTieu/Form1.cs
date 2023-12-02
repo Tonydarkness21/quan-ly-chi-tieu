@@ -36,6 +36,7 @@ namespace QuanLyChiTieu
             try
             {
                 bunifuPanel1.Dock = DockStyle.None; // Un-dock
+                bunifuPanel2.Dock = DockStyle.None;
                 this.WindowState = FormWindowState.Minimized;
                 isMinimized = true;
             }
@@ -47,12 +48,25 @@ namespace QuanLyChiTieu
 
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
+            
+            bunifuPanel2.Controls.Clear();
             Home home = new Home();
             home.TopLevel = false;
             home.Parent = this.bunifuPanel2 as Panel;
             home.Dock = DockStyle.Fill;
             bunifuPanel2.Controls.Add(home);
             home.Show();
+        }
+
+        private void bunifuButton3_Click(object sender, EventArgs e)
+        {
+            bunifuPanel2.Controls.Clear();
+            Wallet wallet = new Wallet();
+            wallet.TopLevel = false;
+            wallet.Parent = this.bunifuPanel2 as Panel;
+            wallet.Dock = DockStyle.Fill;
+            bunifuPanel2 .Controls.Add(wallet);
+            wallet.Show();
         }
     }
 }

@@ -76,5 +76,4 @@ E:\Tài Liệu\Năm 2 official\LTTQ\DoAn\quan-ly-chi-tieu\QuanLyChiTieu\QuanLyCh
 E:\Tài Liệu\Năm 2 official\LTTQ\DoAn\quan-ly-chi-tieu\QuanLyChiTieu\QuanLyChiTieu\obj\Debug\QuanLyChiTieu.exe
 E:\Tài Liệu\Năm 2 official\LTTQ\DoAn\quan-ly-chi-tieu\QuanLyChiTieu\QuanLyChiTieu\obj\Debug\QuanLyChiTieu.pdb
 E:\Tài Liệu\Năm 2 official\LTTQ\DoAn\quan-ly-chi-tieu\QuanLyChiTieu\QuanLyChiTieu\obj\Debug\QuanLyChiTieu.Home.resources
-E:\Tài Liệu\Năm 2 official\LTTQ\DoAn\quan-ly-chi-tieu\QuanLyChiTieu\QuanLyChiTieu\bin\Debug\Krypton.Toolkit.dll
-E:\Tài Liệu\Năm 2 official\LTTQ\DoAn\quan-ly-chi-tieu\QuanLyChiTieu\QuanLyChiTieu\bin\Debug\Krypton.Toolkit.xml
+E:\Tài Liệu\Năm 2 official\LTTQ\DoAn\quan-ly-chi-tieu\QuanLyChiTieu\QuanLyChiTieu\obj\Debug\QuanLyChiTieu.Wallet.resources
