@@ -164,19 +164,52 @@
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="Income.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Income.Designer.cs">
+      <DependentUpon>Income.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IncomeDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IncomeDetail.Designer.cs">
+      <DependentUpon>IncomeDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Spending.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Spending.Designer.cs">
+      <DependentUpon>Spending.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpendingDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpendingDetail.Designer.cs">
+      <DependentUpon>SpendingDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="Wallet.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Wallet.Designer.cs">
       <DependentUpon>Wallet.cs</DependentUpon>
     </Compile>
+    <Compile Include="WalletDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WalletDetail.Designer.cs">
+      <DependentUpon>WalletDetail.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Income.resx">
+      <DependentUpon>Income.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -188,6 +221,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Spending.resx">
+      <DependentUpon>Spending.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Wallet.resx">
       <DependentUpon>Wallet.cs</DependentUpon>
     </EmbeddedResource>
