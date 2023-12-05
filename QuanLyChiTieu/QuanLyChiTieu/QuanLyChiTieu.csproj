@@ -211,6 +211,9 @@
     <EmbeddedResource Include="Income.resx">
       <DependentUpon>Income.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="IncomeDetail.resx">
+      <DependentUpon>IncomeDetail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -223,6 +226,9 @@
     </Compile>
     <EmbeddedResource Include="Spending.resx">
       <DependentUpon>Spending.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpendingDetail.resx">
+      <DependentUpon>SpendingDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Wallet.resx">
       <DependentUpon>Wallet.cs</DependentUpon>

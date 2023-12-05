@@ -16,5 +16,17 @@ namespace QuanLyChiTieu
         {
             InitializeComponent();
         }
+
+        private void bunifuButton1_Click(object sender, EventArgs e)
+        {
+            IncomeDetail detail = new IncomeDetail();
+            detail.ShowDialog();
+        }
+
+        private void bunifuButton3_Click(object sender, EventArgs e)
+        {
+            IncomeDetail detail = new IncomeDetail();
+            detail.ShowDialog();
+        }
     }
 }

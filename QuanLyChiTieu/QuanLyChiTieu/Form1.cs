@@ -12,6 +12,10 @@ namespace QuanLyChiTieu
 {
     public partial class Form1 : Form
     {
+        int move;
+        int moveX;
+        int moveY;
+
         public bool isMinimized = false;
         public Form1()
         {
@@ -89,6 +93,26 @@ namespace QuanLyChiTieu
             spending.Dock = DockStyle.Fill;
             bunifuPanel2.Controls.Add(spending);
             spending.Show();
+        }
+
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            move = 1;
+            moveX=e.X;
+            moveY=e.Y;
+        }
+
+        private void panel1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if(move == 1)
+            {
+                this.SetDesktopLocation(MousePosition.X-moveX, MousePosition.Y-moveY);
+            }
+        }
+
+        private void panel1_MouseUp(object sender, MouseEventArgs e)
+        {
+            move = 0;
         }
     }
 }
