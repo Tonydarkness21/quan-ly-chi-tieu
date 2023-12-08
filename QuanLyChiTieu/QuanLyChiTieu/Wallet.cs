@@ -16,5 +16,11 @@ namespace QuanLyChiTieu
         {
             InitializeComponent();
         }
+
+        private void bunifuButton1_Click(object sender, EventArgs e)
+        {
+            WalletDetail walletDetail = new WalletDetail();
+            walletDetail.ShowDialog();
+        }
     }
 }

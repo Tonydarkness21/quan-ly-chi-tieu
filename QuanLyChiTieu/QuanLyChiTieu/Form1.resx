@@ -120,10 +120,10 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="closeButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAC0AAAAgCAYAAACGhPFEAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAABUSURBVFhH7c6rDQAgEMBQ1gJ1G8D+jMEAfDy6gaTiqZqm
-        Eq1v8yP9TN/C05ymOE1xmuI0xWmK0xSnKU5TnKY4TXGa4jTFaYrTlD+nc9RxC6/KUccC+AsK0+i6N0EA
-        AAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAAC0AAAAmCAYAAABQ3RJZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAABZSURBVFhH7c6rDQAgEARRukHg6b8PyrgC+FiCnhzJiGd2
+        zZTa+tjmR8aJfh2pGU0xmmI0xWiK0RSjKUZTjKYYTTGaYjTFaIrRFKMpRlOMphhN+TY67jG3HgtXajP5
+        bjcq4wAAAABJRU5ErkJggg==
 </value>
   </data>
   <metadata name="bunifuElipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
@@ -215,10 +215,10 @@
   </data>
   <data name="bunifuButton2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAC0AAAAgCAYAAACGhPFEAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAABUSURBVFhH7c6rDQAgEMBQ1gJ1G8D+jMEAfDy6gaTiqZqm
-        Eq1v8yP9TN/C05ymOE1xmuI0xWmK0xSnKU5TnKY4TXGa4jTFaYrTlD+nc9RxC6/KUccC+AsK0+i6N0EA
-        AAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAAC0AAAAmCAYAAABQ3RJZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAABZSURBVFhH7c6rDQAgEARRukHg6b8PyrgC+FiCnhzJiGd2
+        zZTa+tjmR8aJfh2pGU0xmmI0xWiK0RSjKUZTjKYYTTGaYjTFaIrRFKMpRlOMphhN+TY67jG3HgtXajP5
+        bjcq4wAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="bunifuPanel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

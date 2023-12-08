@@ -28,5 +28,11 @@ namespace QuanLyChiTieu
             IncomeDetail detail = new IncomeDetail();
             detail.ShowDialog();
         }
+
+        private void bunifuButton4_Click(object sender, EventArgs e)
+        {
+            IncomeDetail detail = new IncomeDetail();
+            detail.ShowDialog();
+        }
     }
 }

@@ -113,6 +113,8 @@ namespace QuanLyChiTieu
         private void panel1_MouseUp(object sender, MouseEventArgs e)
         {
             move = 0;
+            move = 0;
+            move = 0;
         }
     }
 }

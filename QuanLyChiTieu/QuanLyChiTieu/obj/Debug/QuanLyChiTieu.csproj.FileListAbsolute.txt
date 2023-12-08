@@ -162,3 +162,7 @@ F:\New folder\quan-ly-chi-tieu\QuanLyChiTieu\QuanLyChiTieu\obj\Debug\QuanLyChiTi
 F:\New folder\quan-ly-chi-tieu\QuanLyChiTieu\QuanLyChiTieu\obj\Debug\QuanLyChiTieu.pdb
 F:\New folder\quan-ly-chi-tieu\QuanLyChiTieu\QuanLyChiTieu\obj\Debug\QuanLyChiTieu.IncomeDetail.resources
 F:\New folder\quan-ly-chi-tieu\QuanLyChiTieu\QuanLyChiTieu\obj\Debug\QuanLyChiTieu.SpendingDetail.resources
+F:\New folder\quan-ly-chi-tieu\QuanLyChiTieu\QuanLyChiTieu\obj\Debug\QuanLyChiTieu.Login.resources
+F:\New folder\quan-ly-chi-tieu\QuanLyChiTieu\QuanLyChiTieu\obj\Debug\QuanLyChiTieu.WalletDetail.resources
+F:\New folder\quan-ly-chi-tieu\QuanLyChiTieu\QuanLyChiTieu\obj\Debug\QuanLyChiTieu.Login2.resources
+F:\New folder\quan-ly-chi-tieu\QuanLyChiTieu\QuanLyChiTieu\obj\Debug\QuanLyChiTieu.Signup.resources

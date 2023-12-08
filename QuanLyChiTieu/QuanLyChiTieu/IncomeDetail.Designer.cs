@@ -93,6 +93,7 @@
             this.bunifuDatePicker1.DisabledColor = System.Drawing.Color.Gray;
             this.bunifuDatePicker1.DisplayWeekNumbers = false;
             this.bunifuDatePicker1.DPHeight = 0;
+            this.bunifuDatePicker1.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.bunifuDatePicker1.FillDatePicker = false;
             this.bunifuDatePicker1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuDatePicker1.ForeColor = System.Drawing.Color.Black;
@@ -102,7 +103,7 @@
             this.bunifuDatePicker1.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
             this.bunifuDatePicker1.LeftTextMargin = 5;
             this.bunifuDatePicker1.Location = new System.Drawing.Point(205, 314);
-            this.bunifuDatePicker1.MinimumSize = new System.Drawing.Size(0, 32);
+            this.bunifuDatePicker1.MinimumSize = new System.Drawing.Size(4, 32);
             this.bunifuDatePicker1.Name = "bunifuDatePicker1";
             this.bunifuDatePicker1.Size = new System.Drawing.Size(323, 32);
             this.bunifuDatePicker1.TabIndex = 20;
@@ -306,6 +307,7 @@
             this.bunifuDropdown2.Name = "bunifuDropdown2";
             this.bunifuDropdown2.Size = new System.Drawing.Size(323, 32);
             this.bunifuDropdown2.TabIndex = 16;
+            this.bunifuDropdown2.Text = null;
             this.bunifuDropdown2.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
             this.bunifuDropdown2.TextLeftMargin = 5;
             // 
@@ -359,6 +361,7 @@
             this.bunifuDropdown1.Name = "bunifuDropdown1";
             this.bunifuDropdown1.Size = new System.Drawing.Size(323, 32);
             this.bunifuDropdown1.TabIndex = 14;
+            this.bunifuDropdown1.Text = null;
             this.bunifuDropdown1.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
             this.bunifuDropdown1.TextLeftMargin = 5;
             // 

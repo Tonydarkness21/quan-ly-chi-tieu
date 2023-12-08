@@ -16,5 +16,10 @@ namespace QuanLyChiTieu
         {
             InitializeComponent();
         }
+
+        private void WalletDetail_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

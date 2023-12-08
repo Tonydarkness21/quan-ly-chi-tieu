@@ -16,5 +16,23 @@ namespace QuanLyChiTieu
         {
             InitializeComponent();
         }
+
+        private void bunifuButton1_Click(object sender, EventArgs e)
+        {
+            SpendingDetail spendingDetail = new SpendingDetail();
+            spendingDetail.ShowDialog();
+        }
+
+        private void bunifuButton3_Click(object sender, EventArgs e)
+        {
+            SpendingDetail spendingDetail = new SpendingDetail();
+            spendingDetail.ShowDialog();
+        }
+
+        private void bunifuButton4_Click(object sender, EventArgs e)
+        {
+            SpendingDetail spendingDetail = new SpendingDetail();
+            spendingDetail.ShowDialog();
+        }
     }
 }
