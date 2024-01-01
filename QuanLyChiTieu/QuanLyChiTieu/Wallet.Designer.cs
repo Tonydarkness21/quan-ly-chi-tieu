@@ -56,13 +56,13 @@
             this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.label2 = new System.Windows.Forms.Label();
             this.bunifuPanel3 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartSoDu = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label3 = new System.Windows.Forms.Label();
             columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.bunifuPanel1.SuspendLayout();
             this.bunifuPanel2.SuspendLayout();
             this.bunifuPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartSoDu)).BeginInit();
             this.SuspendLayout();
             // 
             // columnHeader1
@@ -85,10 +85,11 @@
             this.bunifuPanel1.BorderThickness = 1;
             this.bunifuPanel1.Controls.Add(this.label4);
             this.bunifuPanel1.Controls.Add(this.label1);
-            this.bunifuPanel1.Location = new System.Drawing.Point(38, 39);
+            this.bunifuPanel1.Location = new System.Drawing.Point(57, 61);
+            this.bunifuPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuPanel1.Name = "bunifuPanel1";
             this.bunifuPanel1.ShowBorders = true;
-            this.bunifuPanel1.Size = new System.Drawing.Size(283, 173);
+            this.bunifuPanel1.Size = new System.Drawing.Size(424, 270);
             this.bunifuPanel1.TabIndex = 0;
             // 
             // label4
@@ -96,9 +97,10 @@
             this.label4.BackColor = System.Drawing.Color.White;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label4.Location = new System.Drawing.Point(25, 96);
+            this.label4.Location = new System.Drawing.Point(38, 150);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(221, 31);
+            this.label4.Size = new System.Drawing.Size(332, 48);
             this.label4.TabIndex = 2;
             this.label4.Text = "000";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -109,9 +111,10 @@
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label1.Location = new System.Drawing.Point(25, 25);
+            this.label1.Location = new System.Drawing.Point(38, 39);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(221, 31);
+            this.label1.Size = new System.Drawing.Size(359, 50);
             this.label1.TabIndex = 1;
             this.label1.Text = "Tổng số dư hiện tại";
             // 
@@ -122,12 +125,13 @@
             this.columnHeader2});
             this.listView1.FullRowSelect = true;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(36, 59);
+            this.listView1.Location = new System.Drawing.Point(54, 92);
+            this.listView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listView1.Name = "listView1";
             this.listView1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.listView1.RightToLeftLayout = true;
             this.listView1.Scrollable = false;
-            this.listView1.Size = new System.Drawing.Size(434, 185);
+            this.listView1.Size = new System.Drawing.Size(649, 287);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -150,10 +154,11 @@
             this.bunifuPanel2.Controls.Add(this.bunifuButton1);
             this.bunifuPanel2.Controls.Add(this.label2);
             this.bunifuPanel2.Controls.Add(this.listView1);
-            this.bunifuPanel2.Location = new System.Drawing.Point(359, 39);
+            this.bunifuPanel2.Location = new System.Drawing.Point(538, 61);
+            this.bunifuPanel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuPanel2.Name = "bunifuPanel2";
             this.bunifuPanel2.ShowBorders = true;
-            this.bunifuPanel2.Size = new System.Drawing.Size(665, 277);
+            this.bunifuPanel2.Size = new System.Drawing.Size(998, 433);
             this.bunifuPanel2.TabIndex = 1;
             // 
             // bunifuButton3
@@ -203,7 +208,8 @@
             this.bunifuButton3.IdleIconLeftImage = null;
             this.bunifuButton3.IdleIconRightImage = null;
             this.bunifuButton3.IndicateFocus = false;
-            this.bunifuButton3.Location = new System.Drawing.Point(490, 205);
+            this.bunifuButton3.Location = new System.Drawing.Point(735, 320);
+            this.bunifuButton3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuButton3.Name = "bunifuButton3";
             this.bunifuButton3.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton3.OnDisabledState.BorderRadius = 20;
@@ -237,7 +243,7 @@
             this.bunifuButton3.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButton3.OnPressedState.IconLeftImage = null;
             this.bunifuButton3.OnPressedState.IconRightImage = null;
-            this.bunifuButton3.Size = new System.Drawing.Size(150, 39);
+            this.bunifuButton3.Size = new System.Drawing.Size(225, 61);
             this.bunifuButton3.TabIndex = 5;
             this.bunifuButton3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButton3.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -292,7 +298,8 @@
             this.bunifuButton2.IdleIconLeftImage = null;
             this.bunifuButton2.IdleIconRightImage = null;
             this.bunifuButton2.IndicateFocus = false;
-            this.bunifuButton2.Location = new System.Drawing.Point(490, 134);
+            this.bunifuButton2.Location = new System.Drawing.Point(735, 209);
+            this.bunifuButton2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuButton2.Name = "bunifuButton2";
             this.bunifuButton2.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton2.OnDisabledState.BorderRadius = 20;
@@ -326,7 +333,7 @@
             this.bunifuButton2.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButton2.OnPressedState.IconLeftImage = null;
             this.bunifuButton2.OnPressedState.IconRightImage = null;
-            this.bunifuButton2.Size = new System.Drawing.Size(150, 39);
+            this.bunifuButton2.Size = new System.Drawing.Size(225, 61);
             this.bunifuButton2.TabIndex = 4;
             this.bunifuButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButton2.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -381,7 +388,8 @@
             this.bunifuButton1.IdleIconLeftImage = null;
             this.bunifuButton1.IdleIconRightImage = null;
             this.bunifuButton1.IndicateFocus = false;
-            this.bunifuButton1.Location = new System.Drawing.Point(490, 59);
+            this.bunifuButton1.Location = new System.Drawing.Point(735, 92);
+            this.bunifuButton1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuButton1.Name = "bunifuButton1";
             this.bunifuButton1.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton1.OnDisabledState.BorderRadius = 20;
@@ -415,7 +423,7 @@
             this.bunifuButton1.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButton1.OnPressedState.IconLeftImage = null;
             this.bunifuButton1.OnPressedState.IconRightImage = null;
-            this.bunifuButton1.Size = new System.Drawing.Size(150, 39);
+            this.bunifuButton1.Size = new System.Drawing.Size(225, 61);
             this.bunifuButton1.TabIndex = 3;
             this.bunifuButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButton1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -430,9 +438,10 @@
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label2.Location = new System.Drawing.Point(30, 25);
+            this.label2.Location = new System.Drawing.Point(45, 39);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(189, 31);
+            this.label2.Size = new System.Drawing.Size(306, 50);
             this.label2.TabIndex = 2;
             this.label2.Text = "Danh sách các ví";
             // 
@@ -444,26 +453,28 @@
             this.bunifuPanel3.BorderColor = System.Drawing.Color.Transparent;
             this.bunifuPanel3.BorderRadius = 30;
             this.bunifuPanel3.BorderThickness = 1;
-            this.bunifuPanel3.Controls.Add(this.chart1);
+            this.bunifuPanel3.Controls.Add(this.chartSoDu);
             this.bunifuPanel3.Controls.Add(this.label3);
-            this.bunifuPanel3.Location = new System.Drawing.Point(38, 350);
+            this.bunifuPanel3.Location = new System.Drawing.Point(57, 547);
+            this.bunifuPanel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuPanel3.Name = "bunifuPanel3";
             this.bunifuPanel3.ShowBorders = true;
-            this.bunifuPanel3.Size = new System.Drawing.Size(986, 284);
+            this.bunifuPanel3.Size = new System.Drawing.Size(1479, 444);
             this.bunifuPanel3.TabIndex = 2;
             // 
-            // chart1
+            // chartSoDu
             // 
             chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
+            this.chartSoDu.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(31, 68);
-            this.chart1.Name = "chart1";
+            this.chartSoDu.Legends.Add(legend1);
+            this.chartSoDu.Location = new System.Drawing.Point(97, 108);
+            this.chartSoDu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chartSoDu.Name = "chartSoDu";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
             series1.Legend = "Legend1";
-            series1.Name = "Series1";
+            series1.Name = "Số dư";
             series1.Points.Add(dataPoint1);
             series1.Points.Add(dataPoint2);
             series1.Points.Add(dataPoint3);
@@ -471,10 +482,10 @@
             series1.Points.Add(dataPoint5);
             series1.Points.Add(dataPoint6);
             series1.Points.Add(dataPoint7);
-            this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(838, 196);
-            this.chart1.TabIndex = 2;
-            this.chart1.Text = "chart1";
+            this.chartSoDu.Series.Add(series1);
+            this.chartSoDu.Size = new System.Drawing.Size(1257, 306);
+            this.chartSoDu.TabIndex = 2;
+            this.chartSoDu.Text = "Biến động số dư trong tháng";
             // 
             // label3
             // 
@@ -482,22 +493,24 @@
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label3.Location = new System.Drawing.Point(25, 25);
+            this.label3.Location = new System.Drawing.Point(38, 30);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(325, 31);
+            this.label3.Size = new System.Drawing.Size(525, 50);
             this.label3.TabIndex = 1;
             this.label3.Text = "Biến động số dư trong tháng";
             // 
             // Wallet
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1067, 662);
+            this.ClientSize = new System.Drawing.Size(1600, 1034);
             this.Controls.Add(this.bunifuPanel3);
             this.Controls.Add(this.bunifuPanel2);
             this.Controls.Add(this.bunifuPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Wallet";
             this.Text = "Wallet";
             this.bunifuPanel1.ResumeLayout(false);
@@ -506,7 +519,7 @@
             this.bunifuPanel2.PerformLayout();
             this.bunifuPanel3.ResumeLayout(false);
             this.bunifuPanel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartSoDu)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -521,7 +534,7 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton1;
         private System.Windows.Forms.Label label2;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel3;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartSoDu;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.Label label4;

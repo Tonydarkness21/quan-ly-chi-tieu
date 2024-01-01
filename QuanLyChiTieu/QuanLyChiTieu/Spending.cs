@@ -14,7 +14,7 @@ namespace QuanLyChiTieu
     {
         public Spending()
         {
-            InitializeComponent();
+            InitializeComponent(); 
         }
 
         private void bunifuButton1_Click(object sender, EventArgs e)

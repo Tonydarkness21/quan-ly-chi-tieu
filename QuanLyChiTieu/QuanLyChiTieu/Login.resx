@@ -120,18 +120,20 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="bunifuButton2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAC0AAAAkCAYAAAAdFbNSAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAABXSURBVFhH7c6rDQAgEARRukHg6b8PyrgC+FiCnhzJiGd2
-        zZTa+tjmR8aJfh2pGU0xmmI0xWiK0RSjKUZTjKYYTTGaYjTFaIrRFKMpRlOMpnwbHfeYW48FXQ2qdNa0
-        coIAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAAEQAAAA4CAYAAABE814IAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAHYcAAB2HAY/l8WUAAACSSURBVGhD7dChEYAwAARBukHg038fKYMCgCBv6IAVa/7d
+        bfsx5uPiNVeQr+O3BAlBQpAQJAQJQUKQECQECUFCkBAkBAlBQpAQJAQJQUKQECQECUFCkBAkBAlBQpAQ
+        JAQJQUKQECQECUFCkBAkBAlBQpAQJAQJQUKQECQECUFCkBAkBAlBQpAQJASJFeTs+F/jvAEASrkL63gr
+        DwAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="closeButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAC0AAAAkCAYAAAAdFbNSAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAABXSURBVFhH7c6rDQAgEARRukHg6b8PyrgC+FiCnhzJiGd2
-        zZTa+tjmR8aJfh2pGU0xmmI0xWiK0RSjKUZTjKYYTTGaYjTFaIrRFKMpRlOMpnwbHfeYW48FXQ2qdNa0
-        coIAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAAEQAAAA4CAYAAABE814IAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAHYcAAB2HAY/l8WUAAACSSURBVGhD7dChEYAwAARBukHg038fKYMCgCBv6IAVa/7d
+        bfsx5uPiNVeQr+O3BAlBQpAQJAQJQUKQECQECUFCkBAkBAlBQpAQJAQJQUKQECQECUFCkBAkBAlBQpAQ
+        JAQJQUKQECQECUFCkBAkBAlBQpAQJAQJQUKQECQECUFCkBAkBAlBQpAQJASJFeTs+F/jvAEASrkL63gr
+        DwAAAABJRU5ErkJggg==
 </value>
   </data>
 </root>

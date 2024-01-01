@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -19,11 +20,17 @@ namespace QuanLyChiTieu
         public Login()
         {
             InitializeComponent();
+            LoadDatabase();
+        }
+
+        void LoadDatabase()
+        {
+            SqlConnection Connection = new SqlConnection();
         }
 
         private void closeButton_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
 
         private void bunifuButton2_Click(object sender, EventArgs e)
@@ -71,6 +78,16 @@ namespace QuanLyChiTieu
             login2.Dock = DockStyle.Fill;
             panel2.Controls.Add(login2);
             login2.Show();
+        }
+
+        private void panel2_Leave(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Login_Leave(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

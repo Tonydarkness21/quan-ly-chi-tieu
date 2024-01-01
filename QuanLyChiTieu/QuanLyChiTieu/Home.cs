@@ -24,12 +24,19 @@ namespace QuanLyChiTieu
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
-            
+            IncomeDetail detail = new IncomeDetail();
+            detail.ShowDialog();
         }
 
         private void label7_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnSpendingAdd_Click(object sender, EventArgs e)
+        {
+            SpendingDetail spendingDetail = new SpendingDetail();
+            spendingDetail.ShowDialog();
         }
     }
 }
