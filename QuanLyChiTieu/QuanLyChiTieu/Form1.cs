@@ -31,7 +31,7 @@ namespace QuanLyChiTieu
         }
 
         private void bunifuButton4_Click(object sender, EventArgs e)
-        {
+        { 
 
         }
 
@@ -115,6 +115,19 @@ namespace QuanLyChiTieu
             move = 0;
             move = 0;
             move = 0;
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Bạn có chắc chắn muốn thoát?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) != DialogResult.OK)
+            {
+                e.Cancel = true;
+            }
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

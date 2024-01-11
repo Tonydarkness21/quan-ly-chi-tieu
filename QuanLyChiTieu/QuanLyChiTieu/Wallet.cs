@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyChiTieu.DAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,13 @@ namespace QuanLyChiTieu
         public Wallet()
         {
             InitializeComponent();
+            //LoadWalletList();
+        }
+
+        void LoadWalletList()
+        {
+            string query = "EXEC USP_LoadWallet";
+            dtgvWallet.DataSource = DataProvider.Instance.ExecuteQuery(query);
         }
 
         private void bunifuButton1_Click(object sender, EventArgs e)

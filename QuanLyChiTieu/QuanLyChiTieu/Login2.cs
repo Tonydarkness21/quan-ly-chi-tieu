@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyChiTieu.DAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,7 +13,6 @@ namespace QuanLyChiTieu
 {
     public partial class Login2 : Form
     {
-        public bool LoginFlag { get; private set; }
         public Login2()
         {
             InitializeComponent();
@@ -31,13 +31,30 @@ namespace QuanLyChiTieu
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-           if (!string.IsNullOrEmpty(txtBoxUserName.Text) && !string.IsNullOrEmpty(txtBoxPassword.Text))
-           {
-                LoginFlag = true;
+           string username = txtBoxUserName.Text;
+           string password = txtBoxPassword.Text;
+
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin đăng nhập!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            // Validating if something is wrong with account, e.g can't find the account in the database
+            else if (!LoginAuthorization(username, password))
+            {
+                MessageBox.Show("Không tìm thấy dữ liệu tài khoản!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            // Else if everything succeeded, grant user the main form.
+            else
+            {    
                 panel2.Controls.Clear();
                 Form1 mainForm = new Form1();
                 mainForm.ShowDialog();
-           }
+            }
+        }
+
+        bool LoginAuthorization(string username, string password)
+        {
+            return AccountDAO.Instance.LoginCheck(username, password);
         }
 
         private void txtBoxPassword_Enter(object sender, EventArgs e)
@@ -51,6 +68,20 @@ namespace QuanLyChiTieu
             if (string.IsNullOrEmpty(txtBoxPassword.Text))
             {
                 txtBoxPassword.UseSystemPasswordChar = false;
+            }
+        }
+
+        private void btnShowPassword_Click(object sender, EventArgs e)
+        {
+            // Click on button to show password
+            txtBoxPassword.UseSystemPasswordChar = false;
+        }
+
+        private void txtBoxPassword_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnLogin.Focus();
             }
         }
     }

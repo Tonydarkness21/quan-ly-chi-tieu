@@ -16,5 +16,15 @@ namespace QuanLyChiTieu
         {
             InitializeComponent();
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void IncomeDetail_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

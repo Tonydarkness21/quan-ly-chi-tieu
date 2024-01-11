@@ -20,12 +20,6 @@ namespace QuanLyChiTieu
         public Login()
         {
             InitializeComponent();
-            LoadDatabase();
-        }
-
-        void LoadDatabase()
-        {
-            SqlConnection Connection = new SqlConnection();
         }
 
         private void closeButton_Click(object sender, EventArgs e)
@@ -87,7 +81,7 @@ namespace QuanLyChiTieu
 
         private void Login_Leave(object sender, EventArgs e)
         {
-            this.Close();
+            
         }
     }
 }

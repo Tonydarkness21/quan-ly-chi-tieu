@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ColumnHeader columnHeader1;
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
@@ -44,12 +43,13 @@
             System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint5 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 9300D);
             System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint6 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 9000D);
             System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint7 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 7000D);
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuButton3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuButton2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -58,17 +58,17 @@
             this.bunifuPanel3 = new Bunifu.UI.WinForms.BunifuPanel();
             this.chartSoDu = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label3 = new System.Windows.Forms.Label();
-            columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.dtgvWallet = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.MaVi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenVi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenTK = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoDu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bunifuPanel1.SuspendLayout();
             this.bunifuPanel2.SuspendLayout();
             this.bunifuPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartSoDu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvWallet)).BeginInit();
             this.SuspendLayout();
-            // 
-            // columnHeader1
-            // 
-            columnHeader1.Text = "Tên ví";
-            columnHeader1.Width = 179;
             // 
             // bunifuElipse1
             // 
@@ -118,29 +118,6 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Tổng số dư hiện tại";
             // 
-            // listView1
-            // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            columnHeader1,
-            this.columnHeader2});
-            this.listView1.FullRowSelect = true;
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(54, 92);
-            this.listView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.listView1.Name = "listView1";
-            this.listView1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.listView1.RightToLeftLayout = true;
-            this.listView1.Scrollable = false;
-            this.listView1.Size = new System.Drawing.Size(649, 287);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Số tiền";
-            this.columnHeader2.Width = 247;
-            // 
             // bunifuPanel2
             // 
             this.bunifuPanel2.BackgroundColor = System.Drawing.Color.White;
@@ -149,16 +126,16 @@
             this.bunifuPanel2.BorderColor = System.Drawing.Color.Transparent;
             this.bunifuPanel2.BorderRadius = 30;
             this.bunifuPanel2.BorderThickness = 1;
+            this.bunifuPanel2.Controls.Add(this.dtgvWallet);
             this.bunifuPanel2.Controls.Add(this.bunifuButton3);
             this.bunifuPanel2.Controls.Add(this.bunifuButton2);
             this.bunifuPanel2.Controls.Add(this.bunifuButton1);
             this.bunifuPanel2.Controls.Add(this.label2);
-            this.bunifuPanel2.Controls.Add(this.listView1);
-            this.bunifuPanel2.Location = new System.Drawing.Point(538, 61);
+            this.bunifuPanel2.Location = new System.Drawing.Point(499, 61);
             this.bunifuPanel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuPanel2.Name = "bunifuPanel2";
             this.bunifuPanel2.ShowBorders = true;
-            this.bunifuPanel2.Size = new System.Drawing.Size(998, 433);
+            this.bunifuPanel2.Size = new System.Drawing.Size(1037, 466);
             this.bunifuPanel2.TabIndex = 1;
             // 
             // bunifuButton3
@@ -438,7 +415,7 @@
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label2.Location = new System.Drawing.Point(45, 39);
+            this.label2.Location = new System.Drawing.Point(45, 18);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(306, 50);
@@ -455,11 +432,11 @@
             this.bunifuPanel3.BorderThickness = 1;
             this.bunifuPanel3.Controls.Add(this.chartSoDu);
             this.bunifuPanel3.Controls.Add(this.label3);
-            this.bunifuPanel3.Location = new System.Drawing.Point(57, 547);
+            this.bunifuPanel3.Location = new System.Drawing.Point(72, 559);
             this.bunifuPanel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuPanel3.Name = "bunifuPanel3";
             this.bunifuPanel3.ShowBorders = true;
-            this.bunifuPanel3.Size = new System.Drawing.Size(1479, 444);
+            this.bunifuPanel3.Size = new System.Drawing.Size(1392, 444);
             this.bunifuPanel3.TabIndex = 2;
             // 
             // chartSoDu
@@ -500,6 +477,96 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "Biến động số dư trong tháng";
             // 
+            // dtgvWallet
+            // 
+            this.dtgvWallet.AllowCustomTheming = false;
+            this.dtgvWallet.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.dtgvWallet.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dtgvWallet.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvWallet.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dtgvWallet.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dtgvWallet.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvWallet.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dtgvWallet.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvWallet.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaVi,
+            this.TenVi,
+            this.TenTK,
+            this.SoDu});
+            this.dtgvWallet.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            this.dtgvWallet.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dtgvWallet.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dtgvWallet.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.dtgvWallet.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dtgvWallet.CurrentTheme.BackColor = System.Drawing.Color.White;
+            this.dtgvWallet.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.dtgvWallet.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
+            this.dtgvWallet.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            this.dtgvWallet.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dtgvWallet.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            this.dtgvWallet.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.dtgvWallet.CurrentTheme.Name = null;
+            this.dtgvWallet.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dtgvWallet.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dtgvWallet.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dtgvWallet.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.dtgvWallet.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvWallet.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dtgvWallet.EnableHeadersVisualStyles = false;
+            this.dtgvWallet.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.dtgvWallet.HeaderBackColor = System.Drawing.Color.DodgerBlue;
+            this.dtgvWallet.HeaderBgColor = System.Drawing.Color.Empty;
+            this.dtgvWallet.HeaderForeColor = System.Drawing.Color.White;
+            this.dtgvWallet.Location = new System.Drawing.Point(36, 93);
+            this.dtgvWallet.Name = "dtgvWallet";
+            this.dtgvWallet.RowHeadersVisible = false;
+            this.dtgvWallet.RowHeadersWidth = 82;
+            this.dtgvWallet.RowTemplate.Height = 40;
+            this.dtgvWallet.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtgvWallet.Size = new System.Drawing.Size(671, 327);
+            this.dtgvWallet.TabIndex = 6;
+            this.dtgvWallet.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            // 
+            // MaVi
+            // 
+            this.MaVi.HeaderText = "Mã Ví";
+            this.MaVi.MinimumWidth = 10;
+            this.MaVi.Name = "MaVi";
+            // 
+            // TenVi
+            // 
+            this.TenVi.HeaderText = "Tên Ví";
+            this.TenVi.MinimumWidth = 10;
+            this.TenVi.Name = "TenVi";
+            // 
+            // TenTK
+            // 
+            this.TenTK.HeaderText = "Tên tài khoản";
+            this.TenTK.MinimumWidth = 10;
+            this.TenTK.Name = "TenTK";
+            // 
+            // SoDu
+            // 
+            this.SoDu.HeaderText = "Số dư";
+            this.SoDu.MinimumWidth = 10;
+            this.SoDu.Name = "SoDu";
+            // 
             // Wallet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -520,6 +587,7 @@
             this.bunifuPanel3.ResumeLayout(false);
             this.bunifuPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartSoDu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvWallet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -528,7 +596,6 @@
 
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
-        private System.Windows.Forms.ListView listView1;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel2;
         private System.Windows.Forms.Label label1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton1;
@@ -536,9 +603,13 @@
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel3;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartSoDu;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.Label label4;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton3;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton2;
+        private Bunifu.UI.WinForms.BunifuDataGridView dtgvWallet;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaVi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenVi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenTK;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SoDu;
     }
 }
