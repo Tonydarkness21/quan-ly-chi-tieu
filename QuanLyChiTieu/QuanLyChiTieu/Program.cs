@@ -16,8 +16,7 @@ namespace QuanLyChiTieu
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Login loginForm = new Login();
-            Application.Run(loginForm);
+            Application.Run(new Login());
         }
     }
 }

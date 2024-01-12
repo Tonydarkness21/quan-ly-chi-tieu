@@ -611,6 +611,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Income";
             this.Text = "Income";
+            this.Load += new System.EventHandler(this.Income_Load);
             this.bunifuPanel1.ResumeLayout(false);
             this.bunifuPanel1.PerformLayout();
             this.bunifuPanel2.ResumeLayout(false);

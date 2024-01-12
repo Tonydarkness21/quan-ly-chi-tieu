@@ -9,6 +9,7 @@ namespace QuanLyChiTieu.DAO
 {
     public class AccountDAO
     {
+        private AccountDAO() { }
         private static AccountDAO instance;
 
         public static AccountDAO Instance
@@ -17,7 +18,6 @@ namespace QuanLyChiTieu.DAO
             private set => instance = value;
         }
 
-        private AccountDAO() { }
 
         public bool LoginCheck(string username, string password)
         {

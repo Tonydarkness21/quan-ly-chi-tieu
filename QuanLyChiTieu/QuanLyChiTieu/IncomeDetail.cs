@@ -26,5 +26,10 @@ namespace QuanLyChiTieu
         {
 
         }
+
+        private void btnConfirm_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Thêm mới dữ liệu thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+        }
     }
 }

@@ -504,6 +504,7 @@
             this.bunifuDatePicker1.DisabledColor = System.Drawing.Color.Gray;
             this.bunifuDatePicker1.DisplayWeekNumbers = false;
             this.bunifuDatePicker1.DPHeight = 0;
+            this.bunifuDatePicker1.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.bunifuDatePicker1.FillDatePicker = false;
             this.bunifuDatePicker1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuDatePicker1.ForeColor = System.Drawing.Color.Black;
@@ -611,6 +612,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Spending";
             this.Text = "Spending";
+            this.Load += new System.EventHandler(this.Spending_Load);
             this.bunifuPanel1.ResumeLayout(false);
             this.bunifuPanel1.PerformLayout();
             this.bunifuPanel2.ResumeLayout(false);

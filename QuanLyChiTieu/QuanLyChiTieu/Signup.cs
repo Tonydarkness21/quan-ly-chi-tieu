@@ -55,6 +55,10 @@ namespace QuanLyChiTieu
                 {
                     MessageBox.Show("Đăng ký tài khoản thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 }
+                else
+                {
+                    MessageBox.Show("Đăng ký tài khoản thất bại, vui lòng kiểm tra lại thông tin", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }    
             }
         }
 

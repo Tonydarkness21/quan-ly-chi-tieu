@@ -44,10 +44,12 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.bunifuDatePicker1 = new Bunifu.UI.WinForms.BunifuDatePicker();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.bunifuTextBox3 = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bunifuTextBox1 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -60,10 +62,12 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.bunifuDropdown1 = new Bunifu.UI.WinForms.BunifuDropdown();
-            this.label5 = new System.Windows.Forms.Label();
-            this.bunifuDropdown2 = new Bunifu.UI.WinForms.BunifuDropdown();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.bunifuDropdown2 = new Bunifu.UI.WinForms.BunifuDropdown();
+            this.label5 = new System.Windows.Forms.Label();
             this.bunifuPanel1.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -79,10 +83,8 @@
             this.bunifuPanel1.BorderColor = System.Drawing.Color.Transparent;
             this.bunifuPanel1.BorderRadius = 30;
             this.bunifuPanel1.BorderThickness = 1;
-            this.bunifuPanel1.Controls.Add(this.bunifuDatePicker1);
-            this.bunifuPanel1.Controls.Add(this.label6);
-            this.bunifuPanel1.Controls.Add(this.bunifuTextBox3);
-            this.bunifuPanel1.Controls.Add(this.label3);
+            this.bunifuPanel1.Controls.Add(this.panel6);
+            this.bunifuPanel1.Controls.Add(this.panel7);
             this.bunifuPanel1.Controls.Add(this.panel1);
             this.bunifuPanel1.Controls.Add(this.panel2);
             this.bunifuPanel1.Controls.Add(this.panel3);
@@ -94,6 +96,16 @@
             this.bunifuPanel1.ShowBorders = true;
             this.bunifuPanel1.Size = new System.Drawing.Size(834, 1184);
             this.bunifuPanel1.TabIndex = 2;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.Transparent;
+            this.panel6.Controls.Add(this.bunifuDatePicker1);
+            this.panel6.Controls.Add(this.label3);
+            this.panel6.Location = new System.Drawing.Point(12, 687);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(804, 81);
+            this.panel6.TabIndex = 28;
             // 
             // bunifuDatePicker1
             // 
@@ -114,7 +126,7 @@
             this.bunifuDatePicker1.IconColor = System.Drawing.Color.Gray;
             this.bunifuDatePicker1.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
             this.bunifuDatePicker1.LeftTextMargin = 5;
-            this.bunifuDatePicker1.Location = new System.Drawing.Point(308, 491);
+            this.bunifuDatePicker1.Location = new System.Drawing.Point(305, 16);
             this.bunifuDatePicker1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuDatePicker1.MinimumSize = new System.Drawing.Size(4, 32);
             this.bunifuDatePicker1.Name = "bunifuDatePicker1";
@@ -122,18 +134,41 @@
             this.bunifuDatePicker1.TabIndex = 20;
             this.bunifuDatePicker1.Value = new System.DateTime(2023, 12, 5, 16, 41, 0, 0);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.White;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label3.Location = new System.Drawing.Point(29, 10);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(186, 50);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Thời gian";
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.Transparent;
+            this.panel7.Controls.Add(this.label6);
+            this.panel7.Controls.Add(this.bunifuTextBox3);
+            this.panel7.Location = new System.Drawing.Point(11, 29);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(805, 108);
+            this.panel7.TabIndex = 29;
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.White;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label6.Location = new System.Drawing.Point(60, 595);
+            this.label6.Location = new System.Drawing.Point(27, 24);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(153, 50);
+            this.label6.Size = new System.Drawing.Size(145, 50);
             this.label6.TabIndex = 19;
-            this.label6.Text = "Ghi chú";
+            this.label6.Text = "Mã thu";
             // 
             // bunifuTextBox3
             // 
@@ -162,7 +197,7 @@
             this.bunifuTextBox3.IconRight = null;
             this.bunifuTextBox3.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBox3.Lines = new string[0];
-            this.bunifuTextBox3.Location = new System.Drawing.Point(308, 575);
+            this.bunifuTextBox3.Location = new System.Drawing.Point(304, 14);
             this.bunifuTextBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuTextBox3.MaxLength = 32767;
             this.bunifuTextBox3.MinimumSize = new System.Drawing.Size(2, 2);
@@ -210,25 +245,12 @@
             this.bunifuTextBox3.UseSystemPasswordChar = false;
             this.bunifuTextBox3.WordWrap = true;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label3.Location = new System.Drawing.Point(60, 492);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(186, 50);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Thời gian";
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.bunifuTextBox1);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Location = new System.Drawing.Point(12, 45);
+            this.panel1.Location = new System.Drawing.Point(11, 183);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(805, 105);
             this.panel1.TabIndex = 23;
@@ -326,7 +348,7 @@
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.bunifuTextBox2);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(13, 171);
+            this.panel2.Location = new System.Drawing.Point(12, 330);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(804, 89);
             this.panel2.TabIndex = 24;
@@ -424,7 +446,7 @@
             this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.Controls.Add(this.btnExit);
             this.panel3.Controls.Add(this.btnConfirm);
-            this.panel3.Location = new System.Drawing.Point(315, 838);
+            this.panel3.Location = new System.Drawing.Point(341, 853);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(475, 105);
             this.panel3.TabIndex = 25;
@@ -609,13 +631,14 @@
             this.btnConfirm.TextMarginLeft = 0;
             this.btnConfirm.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnConfirm.UseDefaultRadiusAndThickness = true;
+            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Transparent;
             this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.bunifuDropdown1);
-            this.panel4.Location = new System.Drawing.Point(13, 290);
+            this.panel4.Location = new System.Drawing.Point(12, 449);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(804, 85);
             this.panel4.TabIndex = 26;
@@ -666,6 +689,11 @@
             this.bunifuDropdown1.ItemHeight = 26;
             this.bunifuDropdown1.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
             this.bunifuDropdown1.ItemHighLightForeColor = System.Drawing.Color.White;
+            this.bunifuDropdown1.Items.AddRange(new object[] {
+            "Lương",
+            "Thu nợ",
+            "Làm thêm",
+            "Lãi đầu tư"});
             this.bunifuDropdown1.ItemTopMargin = 3;
             this.bunifuDropdown1.Location = new System.Drawing.Point(304, 23);
             this.bunifuDropdown1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -676,18 +704,15 @@
             this.bunifuDropdown1.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
             this.bunifuDropdown1.TextLeftMargin = 5;
             // 
-            // label5
+            // panel5
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.White;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label5.Location = new System.Drawing.Point(28, 12);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(158, 50);
-            this.label5.TabIndex = 15;
-            this.label5.Text = "Ví dùng";
+            this.panel5.BackColor = System.Drawing.Color.Transparent;
+            this.panel5.Controls.Add(this.bunifuDropdown2);
+            this.panel5.Controls.Add(this.label5);
+            this.panel5.Location = new System.Drawing.Point(12, 572);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(804, 72);
+            this.panel5.TabIndex = 27;
             // 
             // bunifuDropdown2
             // 
@@ -722,6 +747,11 @@
             this.bunifuDropdown2.ItemHeight = 26;
             this.bunifuDropdown2.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
             this.bunifuDropdown2.ItemHighLightForeColor = System.Drawing.Color.White;
+            this.bunifuDropdown2.Items.AddRange(new object[] {
+            "V01",
+            "V02",
+            "V03",
+            "V04"});
             this.bunifuDropdown2.ItemTopMargin = 3;
             this.bunifuDropdown2.Location = new System.Drawing.Point(305, 17);
             this.bunifuDropdown2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -732,15 +762,18 @@
             this.bunifuDropdown2.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
             this.bunifuDropdown2.TextLeftMargin = 5;
             // 
-            // panel5
+            // label5
             // 
-            this.panel5.BackColor = System.Drawing.Color.Transparent;
-            this.panel5.Controls.Add(this.bunifuDropdown2);
-            this.panel5.Controls.Add(this.label5);
-            this.panel5.Location = new System.Drawing.Point(13, 401);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(804, 72);
-            this.panel5.TabIndex = 27;
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.White;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label5.Location = new System.Drawing.Point(28, 12);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(158, 50);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "Ví dùng";
             // 
             // IncomeDetail
             // 
@@ -755,7 +788,10 @@
             this.Text = "Thông tin chi tiết khoản thu";
             this.Load += new System.EventHandler(this.IncomeDetail_Load);
             this.bunifuPanel1.ResumeLayout(false);
-            this.bunifuPanel1.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -791,5 +827,7 @@
         private System.Windows.Forms.Panel panel5;
         private Bunifu.UI.WinForms.BunifuDropdown bunifuDropdown2;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel7;
     }
 }

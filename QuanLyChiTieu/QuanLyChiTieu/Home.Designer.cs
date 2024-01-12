@@ -261,7 +261,7 @@
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(201, 48);
             this.label13.TabIndex = 8;
-            this.label13.Text = "000";
+            this.label13.Text = "100000";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label12
@@ -274,7 +274,7 @@
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(254, 44);
             this.label12.TabIndex = 7;
-            this.label12.Text = "000";
+            this.label12.Text = "25000";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label11
@@ -287,7 +287,7 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(254, 44);
             this.label11.TabIndex = 6;
-            this.label11.Text = "000";
+            this.label11.Text = "25000";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label10
@@ -300,7 +300,7 @@
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(254, 44);
             this.label10.TabIndex = 5;
-            this.label10.Text = "000";
+            this.label10.Text = "50000";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label9
