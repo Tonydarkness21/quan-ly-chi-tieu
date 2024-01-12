@@ -32,7 +32,9 @@ namespace QuanLyChiTieu.DTO
         public string TenMucChi { get { return _tenMucChi; } set { _tenMucChi = value; } }
         public string MaLoaiChi { get { return _maLoaiChi; } set { _maLoaiChi = value;} }
         public string Date { get { return _date; } set { _date = value; } }
+        public string MaVi { get { return _maVi; } set { _maVi = value; } }
         public string SoDu { get { return _soDu; } set { _soDu = value; } }
+        public string SoTien {  get { return _soTien; } set { _soTien = value; } }
 
     }
 }

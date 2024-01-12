@@ -19,6 +19,12 @@ namespace QuanLyChiTieu
             InitializeComponent();
         }
 
+        public WalletDetail(string mavi)
+        {
+            InitializeComponent();
+            txtBoxMaVi.Text = mavi;
+        }
+
         private void WalletDetail_Load(object sender, EventArgs e)
         {
 

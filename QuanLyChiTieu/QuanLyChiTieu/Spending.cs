@@ -28,7 +28,12 @@ namespace QuanLyChiTieu
             {
                 ListViewItem lvItem = new ListViewItem(item.MaChi, ToString());
                 lvItem.SubItems.Add(item.TenMucChi);
+                lvItem.SubItems.Add(item.SoTien);
                 lvItem.SubItems.Add(item.MaLoaiChi);
+                lvItem.SubItems.Add(item.Date);
+                lvItem.SubItems.Add(item.MaVi);
+                lvItem.SubItems.Add(item.SoDu);
+                listView1.Items.Add(lvItem);
             }
         }
 
