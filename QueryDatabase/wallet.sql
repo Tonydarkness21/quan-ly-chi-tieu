@@ -98,7 +98,3 @@ END
 
 
 
-
-
-select * from Vi
-select * from TAIKHOAN
