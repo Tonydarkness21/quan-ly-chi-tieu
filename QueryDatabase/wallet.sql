@@ -86,7 +86,7 @@ BEGIN
 	SET  SODU = @SODU
 	WHERE TenVi = @TENVI and TenTk = @TenTK
 END
-drop PROC USP_UpdateWallet
+
 -- Xóa ví
 CREATE PROC USP_DeleteWallet
 @TenVi nVARCHAR(100), @TenTK varchar(100)
@@ -96,7 +96,7 @@ BEGIN
 	WHERE TenVi = @TenVi
 END
 
-drop trigger vi_delete
+
 
 
 

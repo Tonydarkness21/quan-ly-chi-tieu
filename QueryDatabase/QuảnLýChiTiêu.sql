@@ -9,10 +9,6 @@ Set dateformat dmy
 
 go
 
---
-CREATE TABLE my_table (
-  unique_value INTEGER NOT NULL
-);
 --cac bang ve so du
 CREATE TABLE BIENDONGSODU
 (
@@ -53,7 +49,8 @@ begin
 		insert into BIENDONGSODU(TenTK,SoDu,Ngay) values (@TenTK,@SoDu,@Yesterday);
 	end
 end
-drop proc USP_UpdateBalance
+
+--
 CREATE TABLE VI
 (
 	TenVi NVARCHAR(100),
