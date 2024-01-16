@@ -1,31 +1,30 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows;
 
 namespace QuanLyChiTieu.DAO
 {
-    public class SpendingDAO
+    internal class IncomeDAO
     {
-        private SpendingDAO() { }
-        private static SpendingDAO instance;
+        private IncomeDAO() { }
 
-        public static SpendingDAO Instance
+        private static IncomeDAO instance;
+
+        public static IncomeDAO Instance
         {
-            get { if (instance == null) instance = new SpendingDAO(); return instance; }
+            get { if (instance == null) instance = new IncomeDAO(); return instance; }
             private set => instance = value;
         }
-        public List<string> GetSpendingTypeList()
+        public List<string> GetIncomeTypeList()
         {
             //lay datatable
-            string query = @"Select TenLoaiChi from LoaiChi";
+            string query = @"Select TenLoaiThu from LoaiThu";
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
-            List<string> list = data.Rows.OfType<DataRow>().Select(dr => (string)dr["TENLOAICHI"]).ToList();
-           // List<string> result = new List<string>();
+            List<string> list = data.Rows.OfType<DataRow>().Select(dr => (string)dr["TENLOAITHU"]).ToList();
+            // List<string> result = new List<string>();
             //foreach(DataRow row in data.Rows)
             //{
             //    result.Add(row.ToString());
@@ -33,19 +32,19 @@ namespace QuanLyChiTieu.DAO
             return list;
         }
 
-        public List<int> GetWeekSpending()
+        public List<int> GetWeekIncome()
         {
             DateTime date = DateTime.Now.Date;
             List<int> list = new List<int>();
             for (int i = 0; i < 7; i++)
             {
-                int inDay = (int)DataProvider.Instance.ExecuteScalar("USP_GetTotalSpending @ThoiGian , @TENTK", new object[] { date, Form1.currUser });
+                int inDay = (int)DataProvider.Instance.ExecuteScalar("USP_GetTotalIncome @ThoiGian , @TENTK", new object[] { date, Form1.currUser });
                 list.Add(inDay);
 
                 date = date.AddDays(-1);
             }
             list.Reverse();
-            return list;    
+            return list;
         }
     }
 }

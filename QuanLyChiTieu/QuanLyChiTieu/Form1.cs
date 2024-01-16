@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyChiTieu.DAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,7 +16,7 @@ namespace QuanLyChiTieu
         int move;
         int moveX;
         int moveY;
-
+        public static string currUser;
         public bool isMinimized = false;
         public Form1()
         {
@@ -125,6 +126,10 @@ namespace QuanLyChiTieu
             }
         }
 
+        public void UpdateBalance()
+        {
+            DataProvider.Instance.ExecuteNonQuery("USP_UpdateBalance @TenTK", new object[] { currUser });
+        }
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();

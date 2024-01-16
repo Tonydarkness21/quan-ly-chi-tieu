@@ -1,5 +1,4 @@
 ﻿using QuanLyChiTieu.DAO;
-using QuanLyChiTieu.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,15 +13,19 @@ namespace QuanLyChiTieu
 {
     public partial class WalletDetail : Form
     {
+        private int status = 0;
         public WalletDetail()
         {
             InitializeComponent();
+            status = 0;
         }
 
-        public WalletDetail(string mavi)
+        public WalletDetail(string walletName,string balance)
         {
             InitializeComponent();
-            txtBoxMaVi.Text = mavi;
+            status = 1;
+            txtBoxTenVi.Text = walletName;
+            txtBoxSoDu.Text = balance;
         }
 
         private void WalletDetail_Load(object sender, EventArgs e)
@@ -37,26 +40,17 @@ namespace QuanLyChiTieu
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
-            WalletDTO wallet = new WalletDTO(txtBoxMaVi.Text, txtBoxTenVi.Text, txtBoxTenTK.Text, txtBoxSoDu.Text);
-
-            if (string.IsNullOrEmpty(wallet.TenVi) || string.IsNullOrEmpty(wallet.MaVi) || 
-                string.IsNullOrEmpty(wallet.TenTK) || string.IsNullOrEmpty(wallet.SoDu) )
+            string walletName = txtBoxTenVi.Text;
+            string balance = txtBoxSoDu.Text;
+            if (this.status == 0)
             {
-                errorProvider1.SetError(txtBoxMaVi, "Vui lòng nhập đầy đủ thông tin!");
+                DataProvider.Instance.ExecuteNonQuery("USP_AddWallet @TenVi , @TenTK , @SoDu", new object[] { walletName, Form1.currUser, balance });
             }
             else
             {
-                errorProvider1.Clear();
-                if (WalletDAO.Instance.AddWallet(wallet))
-                {
-                    MessageBox.Show("Thêm mới ví thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-                    this.Close();
-                }
-                else
-                {
-                    MessageBox.Show("Thêm mới ví thất bại, vui lòng kiểm tra lại thông tin", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                DataProvider.Instance.ExecuteNonQuery("USP_UpdateWallet @TenVi , @SoDu , @TenTK", new object[] { walletName,  balance ,Form1.currUser});
             }
+            this.Close();
         }
     }
 }

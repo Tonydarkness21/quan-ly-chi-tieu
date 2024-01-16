@@ -48,6 +48,8 @@ namespace QuanLyChiTieu
             {    
                 panel2.Controls.Clear();
                 Form1 mainForm = new Form1();
+                Form1.currUser = username;
+                mainForm.UpdateBalance();
                 mainForm.ShowDialog();
             }
         }
